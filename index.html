@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>委託價目表</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 置頂 -->
+<div class="top-nav">
+    <button onclick="goPage('home')">主頁</button>
+    <button onclick="goPage('notice')">注意事項</button>
+    <button onclick="goPage('process')">委託流程</button>
+    <button onclick="goPage('price')">價目表</button>
+</div>
+
+<!-- 主頁 -->
+<div id="home" class="page active">
+
+    <div class="panel card">
+        <div class="description">繪師簡介</div>
+        <div class="text">這裡放你的自我介紹</div>
+    </div>
+
+    <div class="panel card">
+        <div class="description">排單狀態</div>
+        <div class="text">無排單</div>
+    </div>
+
+    <div class="panel card">
+
+        <div class="description">聯絡方式</div>
+        
+        <div class="text">
+            - 委託EMAIL : yunea.9108@gmail.com<br>
+            - DISCORD : cyuyu_<br>
+            - QQ : 3760152708<br>
+        </div>
+
+        <div class="contact-links">
+            <a href="https://twitter.com" target="_blank" class="link-btn">X(Twitter)</a>
+            <a href="https://www.plurk.com/Mochiiiii" target="_blank" class="link-btn">噗浪</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- 注意事項 -->
+<div id="notice" class="page">
+    <div class="panel card">
+        <div class="description">注意事項</div>
+        <div class="text">
+        • <span class="text-bold">繪師標注：CYu</span><br>
+        • <span class="hl-pink">未成年委託視為家長同意</span><br>
+        • <span class="hl-pink">只接幼女、成女</span>，如果不介意畫的很女性化正太也可以<br>
+        • 不接鎧甲、膚色佔比過高設定；<span class="hl-pink">夢設可，但需先行詢問</span><br>
+        • <span class="hl-pink">價錢皆包含商用</span>，急單、買斷可另外討論<br>
+        • FB最近常常被停權，因為社團貼文太多，尋人花時間且不一定聯絡的上，<span class="hl-pink">委託建議提供除了FB以外的第二聯繫方式</span><br>
+        </div>
+    </div>
+</div>
+
+<!-- 委託流程 -->
+<div id="process" class="page">
+    <div class="panel card">
+        <div class="description">委託流程</div>
+        <div class="text">
+        1. 私訊<br>
+        2. 報價<br>
+        3. 草稿<br>
+        4. 完稿
+        </div>
+    </div>
+</div>
+
+<!-- 價目表 -->
+<div id="price" class="page">
+
+    <div class="price-row">
+        <div class="price-header">
+            <span>項目一</span>
+            <span>NT$500</span>
+        </div>
+        <div class="price-desc">適合頭像、SNS使用，簡單背景</div>
+        <div class="price-images">
+            <img src="img/sample1.png" onclick="openLightbox(this)">
+            <img src="img/sample2.png" onclick="openLightbox(this)">
+            <img src="img/sample3.png" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+    <div class="price-row">
+        <div class="price-header">
+            <span>項目二</span>
+            <span>NT$1000</span>
+        </div>
+        <div class="price-desc">適合頭像、SNS使用，簡單背景</div>
+        <div class="price-images">
+            <img src="img/sample1.png" onclick="openLightbox(this)">
+            <img src="img/sample2.png" onclick="openLightbox(this)">
+            <img src="img/sample3.png" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+    <div class="price-row">
+        <div class="price-header">
+            <span>項目三</span>
+            <span>NT$2000</span>
+        </div>
+        <div class="price-desc">適合頭像、SNS使用，簡單背景</div>
+        <div class="price-images">
+            <img src="img/sample1.png" onclick="openLightbox(this)">
+            <img src="img/sample2.png" onclick="openLightbox(this)">
+            <img src="img/sample3.png" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
