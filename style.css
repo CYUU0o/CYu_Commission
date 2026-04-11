@@ -254,3 +254,62 @@ button:hover{
     font-size: 18px;
     font-weight: 900;
 }
+
+
+/* ===== 手機版優化 ===== */
+
+@media (max-width:700px){
+
+    /* ===== 置頂按鈕變小 + 橫排 ===== */
+    .top-nav{
+        flex-direction: row;     /* 強制橫排 */
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .top-nav button{
+        font-size: 12px;         /* 字變小 */
+        padding: 8px 12px;       /* 按鈕縮小 */
+        letter-spacing: 1px;
+    }
+
+    /* ===== 頁面左右歪掉修正 ===== */
+
+    .page{
+        padding: 0 12px;         /* 手機左右留白 */
+    }
+
+    .page > div{
+        max-width: 100%;         /* 不限制寬度 */
+    }
+
+    /* ===== 字卡內距調整（避免太擠） */
+    .panel,
+    .price-row{
+        padding: 14px 16px;      /* 手機版縮小 */
+    }
+
+    /* ===== 價目表標題縮小 ===== */
+    .description{
+        font-size: 22px;
+    }
+
+    .price-header{
+        font-size: 15px;
+    }
+
+    /* ===== 價目表圖片縮小 ===== */
+
+    .price-images img{
+        width: 80px;
+        height: 80px;
+    }
+
+    /* ===== 按鈕微調 ===== */
+    
+    .link-btn{
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+}
